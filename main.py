@@ -26,3 +26,12 @@ print(population_per_continent)
 for continent in population_per_continent:
     years = population_per_continent[continent]['years']
     population = population_per_continent[continent]['population']
+    plt.plot(years, population, label=continent, marker='o', alpha=0.5)
+
+plt.title("Internet population per continent")
+plt.ylabel("Year")
+plt.xlabel("Internet users")
+plt.legend()
+plt.grid(True)
+
+plt.show()
