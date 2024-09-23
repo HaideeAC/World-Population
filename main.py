@@ -20,3 +20,9 @@ with open(filename, 'r') as csvfile:
         else:
             population_per_continent[continent]['population'].append(population)
             population_per_continent[continent]['years'].append(year)
+            
+print(population_per_continent)
+# Plot
+for continent in population_per_continent:
+    years = population_per_continent[continent]['years']
+    population = population_per_continent[continent]['population']
